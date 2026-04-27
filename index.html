@@ -3,145 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SRB Engineering & Construction | Premium Infrastructure</title>
+    <title>Our Projects | SRB Engineering & Construction</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .hero-bg { 
-            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
-            url('https://images.unsplash.com/photo-1503387762-592dea58ef21?auto=format&fit=crop&q=80'); 
-            background-size: cover; background-position: center; 
-        }
-        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
-        .feature-card:hover { transform: translateY(-8px); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        body { font-family: 'Inter', sans-serif; }
+        .project-card:hover img { transform: scale(1.1); transition: all 0.5s ease; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-slate-50">
 
-    <nav class="glass-nav sticky top-0 z-50 border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-black tracking-tighter text-slate-900 uppercase">SRB <span class="text-blue-600">Engineering</span></h1>
-            <div class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-wider">
-                <a href="#home" class="hover:text-blue-600 transition">Home</a>
-                <a href="#services" class="hover:text-blue-600 transition">Our Expertise</a>
-                <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 shadow-lg shadow-blue-200 transition">Get Started</a>
-            </div>
+    <nav class="bg-white border-b border-slate-200 py-4 px-6 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-black uppercase tracking-tighter">SRB <span class="text-blue-600">Engineering</span></a>
+            <a href="index.html" class="text-sm font-bold text-slate-500 hover:text-blue-600 transition tracking-widest uppercase"><i class="fas fa-arrow-left mr-2"></i> Back to Home</a>
         </div>
     </nav>
 
-    <section id="home" class="hero-bg min-h-[90vh] flex items-center justify-center text-center text-white px-6">
-        <div class="max-w-4xl">
-            <div class="inline-block px-4 py-1 border border-blue-400 rounded-full text-blue-400 text-sm font-bold mb-6 tracking-widest uppercase">
-                ISO Certified Standards
+    <header class="bg-slate-900 py-20 px-6 text-center text-white">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Our Portfolilo</h1>
+        <p class="text-slate-400 max-w-2xl mx-auto">Humne Uttar Pradesh aur aas-paas ke ilako mein kai bade civil aur road projects safalata-purvak poore kiye hain.</p>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-20 px-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="project-card bg-white rounded-3xl overflow-hidden shadow-lg shadow-slate-200 border border-slate-100">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1510133769068-091b40277893?auto=format&fit=crop&q=80" alt="Road Project" class="w-full h-full object-cover">
+                    <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Road Construction</span>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-xl font-bold mb-2">NH-24 Expansion Link</h3>
+                    <p class="text-slate-500 text-sm mb-4"><i class="fas fa-location-dot mr-1 text-blue-500"></i> Sitapur Road, Lucknow</p>
+                    <p class="text-slate-600 leading-relaxed mb-6">4-lane high-quality bitumen road development with proper drainage system.</p>
+                    <div class="flex justify-between items-center border-t pt-4">
+                        <span class="text-xs font-bold text-slate-400 uppercase">Status: Completed</span>
+                        <span class="text-blue-600 font-bold">2025</span>
+                    </div>
+                </div>
             </div>
-            <h2 class="text-5xl md:text-8xl font-bold mb-8 leading-tight">Mastering Civil & <span class="text-blue-500">Infrastructure</span></h2>
-            <p class="text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">From heavy road construction to complex civil engineering projects, we deliver excellence with precision and safety.</p>
-            <div class="flex flex-col md:flex-row gap-5 justify-center">
-                <a href="#services" class="bg-blue-600 text-white px-10 py-5 rounded-lg font-bold text-lg hover:bg-blue-700 transition-all">View All Services</a>
-                <a href="https://wa.me/919129078835" class="bg-white/10 backdrop-blur-md border border-white/20 px-10 py-5 rounded-lg font-bold text-lg hover:bg-white/20 transition-all">Chat on WhatsApp</a>
+
+            <div class="project-card bg-white rounded-3xl overflow-hidden shadow-lg shadow-slate-200 border border-slate-100">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1541976590-713941fbc1c6?auto=format&fit=crop&q=80" alt="Civil Project" class="w-full h-full object-cover">
+                    <span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Civil Works</span>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-xl font-bold mb-2">Industrial Warehouse</h3>
+                    <p class="text-slate-500 text-sm mb-4"><i class="fas fa-location-dot mr-1 text-blue-500"></i> Kursi Road, Barabanki</p>
+                    <p class="text-slate-600 leading-relaxed mb-6">Complete structural design and construction of a 50,000 sq.ft industrial shed.</p>
+                    <div class="flex justify-between items-center border-t pt-4">
+                        <span class="text-xs font-bold text-slate-400 uppercase">Status: Ongoing</span>
+                        <span class="text-blue-600 font-bold">2026</span>
+                    </div>
+                </div>
             </div>
+
+            <div class="project-card bg-white rounded-3xl overflow-hidden shadow-lg shadow-slate-200 border border-slate-100">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1605152276897-4f618f831968?auto=format&fit=crop&q=80" alt="Tanker Project" class="w-full h-full object-cover">
+                    <span class="absolute top-4 left-4 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Tanker Fleet</span>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-xl font-bold mb-2">Bulk Water Logistics</h3>
+                    <p class="text-slate-500 text-sm mb-4"><i class="fas fa-location-dot mr-1 text-blue-500"></i> Various Construction Sites</p>
+                    <p class="text-slate-600 leading-relaxed mb-6">Daily supply of 20+ tankers for dust suppression and curing at major sites.</p>
+                    <div class="flex justify-between items-center border-t pt-4">
+                        <span class="text-xs font-bold text-slate-400 uppercase">Fleet Size: 15+</span>
+                        <span class="text-blue-600 font-bold">Active</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </main>
 
-    <section id="services" class="py-32 px-6 max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
-            <div>
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">Building The Foundations Of Modern India</h2>
-                <p class="text-slate-600 text-lg">Humein har tarah ke civil works ka tajurba hai. Hum sirf road nahi banate, hum bharosa build karte hain.</p>
-            </div>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="bg-blue-600 p-8 rounded-2xl text-white">
-                    <p class="text-3xl font-bold">15+</p>
-                    <p class="text-sm opacity-80 uppercase tracking-tighter">Big Contracts</p>
-                </div>
-                <div class="bg-slate-800 p-8 rounded-2xl text-white">
-                    <p class="text-3xl font-bold">50+</p>
-                    <p class="text-sm opacity-80 uppercase tracking-tighter">Civil Experts</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="feature-card bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100">
-                <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 text-3xl">
-                    <i class="fas fa-city"></i>
-                </div>
-                <h3 class="text-xl font-extrabold mb-4 uppercase">Civil Works</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Residential, commercial, and industrial building projects with high-grade materials.</p>
-            </div>
-
-            <div class="feature-card bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100">
-                <div class="w-16 h-16 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mb-6 text-3xl">
-                    <i class="fas fa-road"></i>
-                </div>
-                <h3 class="text-xl font-extrabold mb-4 uppercase">Road Projects</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Expressways, highways, and internal city roads using advanced paving technology.</p>
-            </div>
-
-            <div class="feature-card bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100">
-                <div class="w-16 h-16 bg-cyan-100 text-cyan-600 rounded-2xl flex items-center justify-center mb-6 text-3xl">
-                    <i class="fas fa-truck-monster"></i>
-                </div>
-                <h3 class="text-xl font-extrabold mb-4 uppercase">Tanker Fleet</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Large capacity tanker supply for water, chemical, and fuel transport across states.</p>
-            </div>
-
-            <div class="feature-card bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100">
-                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 text-3xl">
-                    <i class="fas fa-bridge"></i>
-                </div>
-                <h3 class="text-xl font-extrabold mb-4 uppercase">Infra Work</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Specialized in canals, drainage systems, and small bridge structures.</p>
-            </div>
-        </div>
-    </section>
-
-   <footer class="bg-slate-950 pt-20 pb-10 px-6 text-white border-t border-slate-800">
-    <div class="max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-3 gap-12 mb-16">
-            <div>
-                <h3 class="text-2xl font-black tracking-tighter mb-6 uppercase">
-                    SRB <span class="text-blue-500">Engineering</span>
-                </h3>
-                <p class="text-slate-400 leading-relaxed">
-                    Civil Construction, Road Projects, aur Tanker Supply mein aapka bharosemand partner. 
-                    Quality aur commitment hamari pehchan hai.
-                </p>
-            </div>
-
-            <div>
-                <h4 class="text-lg font-bold mb-6 text-blue-400">Services</h4>
-                <ul class="space-y-3 text-slate-300">
-                    <li><i class="fas fa-check text-blue-500 mr-2 text-xs"></i> Civil Construction</li>
-                    <li><i class="fas fa-check text-blue-500 mr-2 text-xs"></i> Road Development</li>
-                    <li><i class="fas fa-check text-blue-500 mr-2 text-xs"></i> Tanker Supply</li>
-                    <li><i class="fas fa-check text-blue-500 mr-2 text-xs"></i> Govt. Contracts</li>
-                </ul>
-            </div>
-
-            <div id="contact">
-                <h4 class="text-lg font-bold mb-6 text-blue-400">Contact Us</h4>
-                <div class="space-y-4">
-                    <p class="flex items-center gap-3 text-slate-300">
-                        <i class="fas fa-phone text-blue-500"></i> +91 91290 78835
-                    </p>
-                    <p class="flex items-center gap-3 text-slate-300">
-                        <i class="fas fa-envelope text-blue-500"></i> service@web
-                    </p>
-                    <p class="flex items-center gap-3 text-slate-300 italic">
-                        <i class="fas fa-location-dot text-blue-500"></i> Lucknow, Uttar Pradesh
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
-            <p>© 2026 SRB Engineering & Construction. All Rights Reserved.</p>
-        </div>
-    </div>
-</footer>
+    <footer class="bg-slate-50 py-10 text-center text-slate-400 border-t border-slate-200 text-sm">
+        <p>© 2026 SRB Engineering & Construction</p>
+    </footer>
 
 </body>
 </html>
